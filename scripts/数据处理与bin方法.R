@@ -2,9 +2,6 @@ library(ggplot2)
 library(dplyr)
 
 
-Ta <- rnorm(1000, mean = 26, sd = 5)
-TSV <- 0.2 * Ta - 5.2 + rnorm(1000, mean = 0, sd = 1)
-
 df <- read.csv("./data/TSV-Ta数据.csv")
 df.bin <- df %>% 
   mutate(Tabin = cut_width(Ta, width = 1, center = 25)) %>% 
