@@ -16,7 +16,7 @@ ggplot(data = df, aes(x = v, y = PMV)) +
   theme(
     text = element_text(size = 14)
   ) +
-  scale_y_continuous(breaks = seq(0,2,0.1)) +
+  scale_y_continuous(breaks = seq(0,4,0.1)) +
   scale_x_continuous(breaks = seq(0,4,0.5), minor_breaks = seq(0,4,0.1)) +
   labs(x = expression(paste("空气流速 /", "m·",s^-1)),
        y = expression(paste("PM",V[italic(adjusted)]))) +

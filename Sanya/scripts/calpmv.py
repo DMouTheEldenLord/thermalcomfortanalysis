@@ -15,4 +15,4 @@ for i in df.index:
   v = df.at[i, "v"]
   df.at[i, "SET"] = cal_set(ta=ta, tr=ta, v=v, rh=rh, met=met, clo=clo)
   ce = cal_ce(ta=ta, tr=ta, v=v, rh=rh, met=met, clo=clo)
-  df.at[i, "PMV"] = cal_pmv(ta=ta - ce, tr=ta - ce, rh=rh, v=0.1, clo=clo, met=met)
+  df.at[i, "PMV"] = cal_pmv(ta=ta - ce, tr=ta - ce, rh=50, v=0.1, clo=clo, met=met)
